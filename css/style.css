@@ -1,0 +1,100 @@
+:root {
+    --color-bg: #D67BFF;
+    --color-black: #000000;
+    --color-green: #059212;
+    --color-yellow: #FFB200;
+}
+
+body {
+    background-color: var(--color-bg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+  
+.heading {
+    font-family: 'Pacifico', cursive;
+    margin: 35px auto 20px;
+    color: var(--color-black);
+}
+  
+hr {
+    border-top: 2px solid;
+    color: var(--color-black);
+    width: 50%;
+    margin-bottom: 55px;
+}
+  
+.main {
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+  
+label {
+    font-size: 20px;
+}
+  
+.btn {
+    width: 200px;
+}
+
+.btn-convert {
+    background-color: var(--color-green);
+    border: none;
+}
+
+.btn-convert:hover {
+    background-color: #399918;
+}
+
+.btn-reset {
+    background-color: var(--color-yellow);
+    border: none;
+    color: var(--color-black);
+}
+
+.btn-reset:hover{
+    background-color: #F4CE14;
+    color: var(--color-black);
+}
+  
+#finalAmount {
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
+}
+  
+#finalAmount h2 {
+    font-size: 50px;
+}
+  
+.finalValue {
+    font-family: 'Amiri', serif;
+    color: var(--color-green);
+}
+  
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+  
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+    hr {
+        width: 75%;
+    }
+    #finalAmount h2, .finalValue {
+        font-size: 40px;
+    }
+}
